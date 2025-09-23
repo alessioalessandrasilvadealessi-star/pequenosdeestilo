@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pequenos Estilos - Promoções</title>
+  <style>
+    :root{--accent:#2a9d8f;--accent-dark:#227a6d;--muted:#f7f3ee;--card:#ffffff}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--muted); color:#222;}
+    header{background:#fff; padding:18px 24px; box-shadow:0 2px 6px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:space-between; max-width:1100px; margin:18px auto; border-radius:12px;}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#ffb4a2,#90e0ef);display:flex;align-items:center;justify-content:center;font-weight:800;color:white}
+    main{max-width:1100px;margin:22px auto;padding:18px;}
+    .hero{display:grid; grid-template-columns: 1fr; gap:20px; align-items:center; background:var(--card); padding:18px; border-radius:14px; box-shadow:0 6px 18px rgba(10,10,10,0.04);}
+    @media(min-width:900px){ .hero{grid-template-columns:1fr 460px} }
+    .hero-text h1{font-size:28px;margin:0 0 8px 0}
+    .hero-text p{margin:0 0 12px 0; color:#546170}
+    .buttons{display:flex; gap:10px}
+    .btn{padding:10px 16px;border-radius:10px;text-decoration:none;display:inline-block;font-weight:700}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{border:2px solid var(--accent); color:var(--accent); background:transparent}
+    .promo-badges{display:flex; gap:8px; margin-top:10px}
+    .badge{background:#ffe8d6;padding:8px 10px;border-radius:10px;font-weight:700;color:#bb3b3b}
+    .gallery{display:grid; grid-template-columns:repeat(1,1fr); gap:12px; margin-top:18px}
+    @media(min-width:700px){ .gallery{grid-template-columns:repeat(3,1fr)} }
+    .card{background:var(--card); padding:12px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.04); text-align:center}
+    .card img{width:100%; height:320px; object-fit:cover; border-radius:8px}
+    footer{max-width:1100px;margin:18px auto;text-align:center;color:#6b7280}
+    .whatsapp{position:fixed; right:18px; bottom:18px; background:#25D366; color:white; padding:14px 16px; border-radius:999px; box-shadow:0 8px 20px rgba(0,0,0,0.18); text-decoration:none; font-weight:700}
+    .small-note{font-size:13px; color:#6b7280}
+    .product-grid{display:grid; grid-template-columns:repeat(1,1fr); gap:12px; margin-top:18px}
+    @media(min-width:700px){ .product-grid{grid-template-columns:repeat(3,1fr)} }
+    .product{background:#fff;border-radius:10px;padding:12px; text-align:center; box-shadow:0 8px 26px rgba(15,15,15,0.04)}
+    .product img{width:100%; height:220px; object-fit:cover; border-radius:8px}
+    .price{font-weight:800; margin-top:8px}
+    .cta-buy{display:inline-block;margin-top:10px;padding:8px 12px;background:var(--accent-dark); color:white; border-radius:8px; text-decoration:none; font-weight:700}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">PE</div>
+      <div>
+        <div style="font-weight:800">Pequenos Estilos</div>
+        <div style="font-size:13px;color:#6b7280">Moda infantil com amor</div>
+      </div>
+    </div>
+    <nav style="display:flex;gap:12px;align-items:center">
+      <a class="small-note" href="#produtos">Produtos</a>
+      <a class="small-note" href="#promocoes">Promoções</a>
+      <a class="small-note" href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Promoção">
+      <div class="hero-text">
+        <h1>Looks fofos para todas as idades — Promoção especial</h1>
+        <p>Leve 3 peças e pague 2. Descontos progressivos, kits com até 30% OFF e frete grátis acima de R$199. Use <strong>BEMVINDO10</strong> na primeira compra.</p>
+
+        <div class="buttons">
+          <a class="btn btn-primary" href="#produtos">Ver Produtos</a>
+          <a class="btn btn-ghost" href="#promocoes">Ver Promoções</a>
+        </div>
+
+        <div class="promo-badges">
+          <div class="badge">Leve 3 Pague 2</div>
+          <div class="badge" style="background:#e6f5f3;color:#0b6b5f">Frete grátis a partir de R$199</div>
+        </div>
+
+        <div style="margin-top:14px;">
+          <strong style="display:block">Como funciona:</strong>
+          <ul style="margin:8px 0 0 18px;color:#546170">
+            <li>1 peça = preço normal</li>
+            <li>2 peças = 10% OFF</li>
+            <li>3 peças = 20% OFF</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <img src="creative1.png" alt="Criativo 1" style="width:100%; height:220px; object-fit:cover; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.06)"/>
+        <img src="creative2.png" alt="Criativo 2" style="width:100%; height:220px; object-fit:cover; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.06)"/>
+        <img src="creative3.png" alt="Criativo 3" style="width:100%; height:120px; object-fit:cover; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.06)"/>
+      </div>
+    </section>
+
+    <section id="promocoes" style="margin-top:18px;">
+      <h2 style="margin:0 0 10px 0">Promoções em destaque</h2>
+      <div class="product-grid" role="list">
+        <div class="product" role="listitem">
+          <img src="prod1.jpg" alt="Kit 3 bodies - Promo">
+          <div style="font-weight:700;margin-top:8px">Kit 3 bodies</div>
+          <div class="price">R$ 99,90</div>
+          <a class="cta-buy" href="#contato">Comprar via WhatsApp</a>
+        </div>
+        <div class="product" role="listitem">
+          <img src="prod2.jpg" alt="Vestido Floral">
+          <div style="font-weight:700;margin-top:8px">Vestido Floral</div>
+          <div class="price">R$ 69,90</div>
+          <a class="cta-buy" href="#contato">Comprar via WhatsApp</a>
+        </div>
+        <div class="product" role="listitem">
+          <img src="prod3.jpg" alt="Conjunto Menino">
+          <div style="font-weight:700;margin-top:8px">Conjunto Menino</div>
+          <div class="price">R$ 59,90</div>
+          <a class="cta-buy" href="#contato">Comprar via WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos" style="margin-top:22px;">
+      <h2 style="margin-bottom:8px">Produtos em destaque</h2>
+      <div class="gallery">
+        <div class="card"><img src="creative1.png" alt="creative1"/><div style="font-weight:700;margin-top:8px">Look bebê - body</div></div>
+        <div class="card"><img src="creative2.png" alt="creative2"/><div style="font-weight:700;margin-top:8px">Vestido</div></div>
+        <div class="card"><img src="creative3.png" alt="creative3"/><div style="font-weight:700;margin-top:8px">Kit promocional</div></div>
+      </div>
+    </section>
+
+    <section id="contato" style="margin-top:22px; background:#fff; padding:14px; border-radius:10px;">
+      <h3>Contato & Compras</h3>
+      <p class="small-note">Compre rápido via WhatsApp. Informe o código do produto e nós confirmamos estoque e envio.</p>
+      <p style="margin-top:8px"><strong>WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1%2C%20gostaria%20de%20comprar%20um%20produto" target="_blank">+55 11 99999-9999</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Pequenos Estilos • © 2025</p>
+    <p class="small-note">Frete grátis acima de R$199. Trocas em até 7 dias úteis.</p>
+  </footer>
+
+  <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1%2C%20tenho%20interesse%20nos%20produtos" target="_blank">WhatsApp</a>
+
+</body>
+</html>
